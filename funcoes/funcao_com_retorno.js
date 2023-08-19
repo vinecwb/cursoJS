@@ -6,8 +6,10 @@ function textoOuNumero(retornaTexto){
     return retornaTexto ? "Sou um texto!" : 123; // Se for true retorna string se não 123; 
 }
 
-let valor = sempreRetornaUm() + 999;
-console.log(valor);
+const valor = sempreRetornaUm() + 999;
+console.log({valor});
+
+console.log({retornoDaFunc: textoOuNumero(false)})
 
 let texto = textoOuNumero(true);
 console.log(texto);
